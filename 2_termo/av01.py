@@ -12,7 +12,10 @@ O olho da esquerda é o  mais significativo  e  o  da  direita  é  o  menos  si
 piscada, este  número  deve  ser somado, e quando o corvo grita, essa soma é um resultado.
 
 >> Entrada
-A entrada descreve, em cada linha, em sequência, ou um grito ou uma piscada do corvo. Um grito é representado pela string ‘caw caw’. Uma piscada é representada por três caracteres * ou -, representando, respectivamente, um olho aberto ou um olho fechado, da esquerda para a direita. Lembre-se que o corvo tem 3 olhos. Os números sorteados na loteria não excedem 1000.
+A entrada descreve, em cada linha, em sequência, ou um grito ou uma piscada do corvo. 
+Um grito é representado pela string "caw caw". Uma piscada é representada por três caracteres * ou -, 
+representando, respectivamente, um olho aberto ou um olho fechado, da esquerda para a direita. 
+Lembre-se que o corvo tem 3 olhos. Os números sorteados na loteria não excedem 1000.
 
 >> Saída
 A saída são três linhas, cada linha com um número da loteria
