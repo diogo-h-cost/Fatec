@@ -4,7 +4,6 @@ Leia um número x entre 1 e 10.
 Imprima a lista e mostre quantos números iguais a x tem na lista.
 """
 
-
 from random import randint
 
 l = []
@@ -13,13 +12,11 @@ for i in range(20):
 x = int(randint(1, 10))
 print(f"Lista = {l} -> X = {x} ->  {l.count(x)} X")
 
-
 """ 2º
 Faça um programa que gere aleatoriamente duas listas de 10 posições (valores entre 1 e 50) 
 e calcule outra lista contendo, nas posições pares os valores da primeira lista e nas posições 
 ímpares os valores da segunda lista.
 """
-
 
 from random import randint
 
@@ -39,12 +36,10 @@ print(a)
 print(b)
 print(c)
 
-
 """ 3º
 Gere uma lista 20 números aleatórios entre 1 e 50 e mostre qual o maior valor da lista, o menor e a média
 dos valores.
 """
-
 
 from random import randint
 
@@ -58,15 +53,12 @@ print(f"Maior = {max(a)}")
 print(f"Menor = {min(a)}")
 print(f"Media = {sum(a)/len(a)}")
 
-
-
 """ 4º
 Faça um programa em Python para gerar uma lista de 20 números aleatórios entre 1 e 50. Imprima a
 lista. Após isto, deverá ser lido um número qualquer e verificar se esse número existe na lista ou não. Se
 existir, gerar uma nova lista sem esse número (remova todas as ocorrências do número). Imprima a nova
 lista.
 """
-
 
 from random import randint
 
@@ -80,7 +72,6 @@ for i in range(len(a)):
     if num in a:
         a.remove(num)
 print(a)
-
 
 """ 5º
 João quer montar um painel de leds contendo diversos números. Ele não possui muitos leds, e não tem
@@ -97,7 +88,6 @@ Saída
 Para cada caso de teste, imprima uma linha contendo o número de leds que João precisa para montar
 o valor desejado, seguido da palavra "leds".
 """
-
 
 def somaleds(numero):
     leds = 0
