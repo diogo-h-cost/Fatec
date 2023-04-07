@@ -42,7 +42,9 @@ usuário seja inválida.
 Obs.: Crie quantas funções achar necessário para validar a senha
 """
 
-import string
+# >>> CODIGO EM COMENTARIO PORQUE TEM QUE IMPORTAR TERMCOLOR <<<<<
+
+"""
 from random import randint, choice, sample
 from termcolor import colored
 
@@ -84,6 +86,7 @@ else:
     senha = geraSenha()
     print("~" * 44)
     print(f"Senha gerada aleatoriamente >> {senha}")
+"""
 
 """
 >> Conversão de bases <<
