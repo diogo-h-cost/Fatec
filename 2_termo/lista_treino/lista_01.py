@@ -127,3 +127,81 @@ print(f"Km/h > {km}\nM/s > {ms:.6f}")
 """
 
 # ------------------------------
+
+"""
+11.  Leia uma velocidade em m/s (metros por segundo) e apresente-a convertida em km/h
+(quilometros por hora). A formula de conversao e: K = M * 3.6, sendo K a velocidade
+em km/h e M em m/s.
+"""
+
+"""
+vms = float(input())
+print(f"{vms} m/s e igual a {vms * 3.6} km/h")
+"""
+
+# ------------------------------
+
+"""
+12. Leia uma distancia em milhas e apresente-a convertida em quilometros. A formula de 
+conversao e: K = 1, 61 * M, sendo K a distancia em quilometros e M em milhas.
+"""
+
+"""
+mil = float(input())
+print(f"{mil} milhas e igual a {1.61 * mil} quilometros")
+"""
+
+# ------------------------------
+
+"""
+13. Leia uma distancia em quilometros e apresente-a convertida em milhas. A formula de
+conversao e: M = K / 1,61, sendo K a distancia em quilometros e M em milhas.
+"""
+
+"""
+k = float(input())
+print(f"{k} quilometros e igual a {k/1.61:.2f} milhas")
+"""
+
+# ------------------------------
+
+"""
+14. Leia um angulo em graus e apresente-o convertido em radianos. A formula de conversao
+e: R = G * π/180, sendo G o angulo em graus e R em radianos e π = 3.14.
+"""
+
+"""
+ang = float(input())
+print(f"{ang} graus e igual a {ang * 3.14 / 180:.7f} radianos")
+"""
+
+# ------------------------------
+
+"""
+15. Leia um angulo em radianos e apresente-o convertido em graus. A formula de conversao
+e: G = R * 180/π, sendo G o angulo em graus e R em radianos e π = 3.14.
+"""
+
+"""
+r = float(input())
+print(f"{r} radianos e igual a {r * 180 / 3.14} graus")
+"""
+
+# ------------------------------
+
+"""
+16. Leia um valor de comprimento em polegadas e apresente-o convertido em centimetros.
+A formula de conversao e: C = P * 2.54, sendo C o comprimento em centimetros e P o
+comprimento em polegadas.
+"""
+
+"""
+p = float(input())
+print(f"{p} polegadas e igual a {p * 2.54} centimetros")
+"""
+
+# ------------------------------
+
+"""
+17. 
+"""
