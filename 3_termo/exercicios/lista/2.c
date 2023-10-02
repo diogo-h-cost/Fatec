@@ -2,16 +2,18 @@
 
 int main()
 {
-	double venda, desc;
+	double base, altura, perim, area;
 	
-	desc = 0;
+	printf("Base: ");
+	scanf("%lf", &base);
 	
-	printf("Valor s/ desconto: ");
-	scanf("%lf", &venda);
+	printf("Perimetro: ");
+	scanf("%lf", &altura);
 	
-	desc = venda - ((venda * 12.5) / 100);
+	perim = 2.0 * (base + altura);
+	area = base * altura;
 	
-	printf("Venda: %.2lf reais\nVenda c/ desconto: %.2lf\n", venda, desc);
+	printf("\nPerimetro = %.1lf\nArea = %.1lf\n", perim, area);
 	
 	return 0;
 }
