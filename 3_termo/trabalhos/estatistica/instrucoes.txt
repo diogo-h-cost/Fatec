@@ -1,0 +1,7 @@
+Fazer um programa para realizar 2 a 3 formulas do conteudo da N1
+
+Exe:
+
+1. Media
+2. Moda
+3. Mediana
