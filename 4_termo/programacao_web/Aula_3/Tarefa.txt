@@ -1,0 +1,3 @@
+Criar uma nova página HTML para outro curso da lista UL   (FEITO)
+Colocar TAGS já usadas   (FEITO)
+Link da pg index.html até a pg desse curso   (FEITO)
