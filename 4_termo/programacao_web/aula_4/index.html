@@ -24,18 +24,24 @@
 
         <h2>Contato</h2>
         <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
-        <form>
-            <fieldset>
-                <legend>Contato</legend>
+        <form action="enviarmensagem.php">
+            <fieldset> <!-- Borda do formulário-->
+                <legend>Formulário de Contato</legend>
                 <div>
-                    <label>Seu nome:</label>
-                    <input type = "text">
+                    <label for="nome">Seu nome:</label> <!-- "LABEL" rotulo do campo-->
+                    <input type="text" id="nome" name="nome"> <!-- "FOR" rotulo para campo (id) -->
+                </div>
+                <div> <!-- Caixa horizontal-->
+                    <label for="email">Seu e-mail:</label> <!-- "ID" identifica o elemento no HTML, CSS, JS -->
+                    <input type="email" id="email" name="email"> <!-- "NAME" identifica o elemento no server -->
                 </div>
                 <div>
-                    <label>Mensagem:</label>
-                    <textarea></textarea>
+                    <label for="mensagem">Mensagem:</label> 
+                    <!-- "ROWS" quantidade de linhas da caixa de texto
+                    "COLS" Número de colunas (caracteres) por linha -->
+                    <textarea id="mensagem" rows="5" cols="50" name="mensagem"></textarea>
                 </div>
-                <button type = "submit">Enviar</button>
+                <button type="submit">Enviar</button>
             </fieldset>
         </form>
 
