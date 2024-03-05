@@ -2,13 +2,13 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Cadastro</title>
+        <title>Cadastro de Cliente</title>
     </head>
     <body>
-        <h1>Cadastro de clientes</h1>
+        <h1>Cadastro de cliente</h1>
         <form action="script.php">
             <fieldset>
-                <legend>Formulário</legend>
+                <legend>Dados do Cliente</legend>
                 <div>
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome">
@@ -19,7 +19,7 @@
                 </div>
                 <div>
                     <label for="endereco">Endereço:</label>
-                    <input type="text" id="endereco" name="endereco">
+                    <textarea id="endereco" name="endereco" rows="3" cols="50"></textarea>
                 </div>
                 <div>
                     <label for="cidade">Cidade:</label>
@@ -28,17 +28,17 @@
                 <div>
                     <label for="estado">Estado:</label>
                     <select id="estado" name="estado">
-                        <option></option> <!-- [VALUE = "aaa"] dentro do OPTION e como o server vai receber essa informacao-->
+                        <option></option> <!-- [VALUE = "aaa"] dentro do 1° OPTION e como o server vai receber essa informacao-->
                         <option>Alagoas</option>
-                        <option>Bahia</option>
-                        <option>Piauí</option>
+                        <option>Bahia</option> <!-- 1º OPTION "selected" deixa como padrao -->
                         <option>Ceará</option>
+                        <option>Piauí</option>
                         <option>São Paulo</option>
                     </select>
                 </div>
                 <div>
-                    <label for="nasc">Nascimento:</label>
-                    <input type="date" id="nasc" name="nasc">
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento">
                 </div>
                 <div>
                     <label for="email">E-mail:</label>
