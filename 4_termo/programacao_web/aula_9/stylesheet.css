@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* [space-around] Espaco em volta e entre eles */
+    align-items: center; /* Alinhamento vertical centralizado */
+    border: 1px solid navy;
+    padding: 30px;
+}
+
+nav {
+    border: 2px solid navy;
+    background-color: navy;
+}
+
+nav ul { /* Somente [ul] dentro da [nav] */
+    display: flex;
+}
+
+nav li {
+    text-align: center; /* Centralizar o texto dentro do [li] */
+    width: 200px; /* Aumentar a largura em pixels dos [li] */
+    list-style-type: none;  /* Remove a bolinha do [li] */
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+nav a { /* Link */
+    color: white;
+    text-decoration: none; /* Remove o sublinha do Link */
+}
+
+nav a:hover { /* Quando mouse estiver em cima do Link */
+    text-decoration: underline; /* Coloca sublinhado no Link */
+}
+
+#titulo {
+    color: brown;
+    font-size: 70px;
+    text-shadow: 3px 3px 0px lightgray; /* Sombra
+    Deslocamento [Horizontal] [Vertical] [Borrar] [Cor] */
+}
+
+#slogan {
+    font-size: 30px;
+    font-style: italic; /* Fonte em italico*/
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: cornflowerblue;
+    text-shadow: 5px 5px 5px lightgray;
+}
+
+.produtos {
+    color: aliceblue;
+    background-color: darkblue;
+}
