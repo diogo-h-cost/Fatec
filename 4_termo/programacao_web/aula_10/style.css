@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*margin: 0px; Conteudo na pag inteira (tira espaco dos lados) */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid navy;
+    padding: 30px;
+}
+
+#titulo {
+    color: brown;
+    font-size: 70px;
+    text-shadow: 3px 3px 0px lightgray;
+}
+
+#slogan {
+    font-size: 30px;
+    font-style: italic;
+}
+
+nav {
+    border: 2px solid navy;
+    background-color: navy;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    text-align: center;
+    width: 200px;
+    list-style-type: none;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main { /* Conteudo principal */
+    border: 2px solid navy;
+    margin-bottom: 10px; /* Margem em baixo entre o Main e o Footer */
+    /* Tem 4 tipos de margin- ... */
+}
+
+section {
+    border: 2px solid black;
+    margin: 5px; /* Espaco entre o elemento e o que esta em volta (espaco de fora) */
+    padding: 12px; /* Espaco entre o elemento e o que ele contem (espaco de dentro) */
+    border-radius: 10px; /* Arredondamento do canto da borda */
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: cornflowerblue;
+    text-shadow: 5px 5px 5px lightgray;
+}
+
+.produto {
+    color: aliceblue;
+    background-color: darkblue;
+}
+
+footer {
+    border: 2px solid navy;
+    background-color: gray;
+    color: white;
+}
+
+footer ul { /* Lista do Footer */
+    display: flex;
+    justify-content: space-around; /* Espaço antes, entre e depois deles (Icons) */
+}
+
+footer li { /* Elementos da Lista [Footer] */
+    list-style-type: none; /* Tira os ponto da lista*/
+}
+
+.icone { /* Classe p/ icones */
+    width: 30px; /* Largura do icon */
+}
+
+address {
+    font-size: 20px; /* 16px e o padrao da fonte */
+    text-align: center;
+    margin: 10px; /* Espaco entre o elemento e o que esta em volta dele */
+}
