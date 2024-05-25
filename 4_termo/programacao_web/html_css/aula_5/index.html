@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Cliente</title>
+    </head>
+    <body>
+        <h1>Cadastro de cliente</h1>
+        <form action="script.php">
+            <fieldset>
+                <legend>Dados do Cliente</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf">
+                </div>
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <textarea id="endereco" name="endereco" rows="3" cols="50"></textarea>
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado">
+                        <option></option> <!-- [VALUE = "aaa"] dentro do 1° OPTION e como o server vai receber essa informacao-->
+                        <option>Alagoas</option>
+                        <option>Bahia</option> <!-- 1º OPTION "selected" deixa como padrao -->
+                        <option>Ceará</option>
+                        <option>Piauí</option>
+                        <option>São Paulo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+                <button type="submit">Cadastrar</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

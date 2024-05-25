@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*margin: 0px;*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid navy;
+    padding: 30px;
+}
+
+#titulo {
+    color: brown;
+    font-size: 70px;
+    text-shadow: 3px 3px 0px lightgray;
+}
+
+#slogan {
+    font-size: 30px;
+    font-style: italic;
+}
+
+nav {
+    border: 2px solid navy;
+    background-color: navy;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    text-align: center;
+    width: 200px;
+    list-style-type: none;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    border: 2px solid navy;
+    margin-bottom: 10px;
+}
+
+section {
+    border: 2px solid black;
+    margin: 5px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.secao {
+    font-size: 30px;
+    text-align: center;
+    color: cornflowerblue;
+    text-shadow: 5px 5px 5px lightgray;
+}
+
+.vitrine {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    border: 2px solid #696969;
+    border-radius: 8px;
+    flex-direction: column; /* Colocar os elementos um embaixo do outro */
+    display: flex; /* Controlar a posicao dos elementos (Um do lado do outro)*/
+    justify-content: center; /* Centralizar horizontalmente o conteudo do card */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+.img_prod {
+    width: 150px;
+}
+
+.produto {
+    color: aliceblue;
+    background-color: #708090;
+    font-size: 16px;
+}
+
+footer {
+    border: 2px solid navy;
+    background-color: gray;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+.icone {
+    width: 30px;
+}
+
+address {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
