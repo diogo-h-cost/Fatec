@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Compras em JavaScript</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img id="icon" src="icon_list.png" alt="Desenho de uma lista de compras">
+            <h1 id="titulo">Lista de Compras</h1>
+        </header>
+        <main>
+            <div id="container">
+                <label for="item">Item:</label>
+                <input type="text" id="item">
+
+                <label for="uni">Unidade:</label>
+                <input type="number" id="uni">
+
+                <label for="prec">Preço:</label>
+                <input type="text" id="prec">
+
+                <button id="but">Add</button>
+            </div>
+
+            <h2>Lista de itens</h2>
+            <ul id="lista"></ul>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
