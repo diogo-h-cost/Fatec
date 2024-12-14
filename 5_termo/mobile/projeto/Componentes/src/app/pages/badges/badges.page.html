@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Badges</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h4>Padrão</h4>
+  <ion-badge>99</ion-badge>
+
+  <h4>Esquerda (start)</h4>
+  <ion-item>
+    <ion-badge slot="start">11</ion-badge>
+    <ion-label>Badge in start slot</ion-label>
+  </ion-item>
+
+  <h4>Direita (end)</h4>
+  <ion-item>
+    <ion-badge slot="end">22</ion-badge>
+    <ion-label>Badge in end slot</ion-label>
+  </ion-item>
+
+  <h4>Temas</h4>
+  <ion-list>
+    <ion-item>
+      <ion-label>Followers</ion-label>
+      <ion-badge color="primary">22k</ion-badge>
+      <ion-badge color="danger">1</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Likes</ion-label>
+      <ion-badge color="secondary">10</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Stars</ion-label>
+      <ion-badge color="tertiary">34</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Completed</ion-label>
+      <ion-badge color="success">80</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Warnings</ion-label>
+      <ion-badge color="warning">70</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Notifications</ion-label>
+      <ion-badge color="danger">100</ion-badge>
+    </ion-item>
+
+    <h4>Custom</h4>
+    <ion-item>
+      <ion-label>Badges styled</ion-label>
+      <ion-badge class="custom">1</ion-badge>
+    </ion-item>
+
+    <ion-button href="https://ionicframework.com/docs/api/badge" target="_blank" color="danger">Documentação</ion-button>
+  </ion-list>
+</ion-content>

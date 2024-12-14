@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Toasts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="blocos">
+    <h5>Linha</h5>
+    <div id="bloc_1_but_mes">
+      <ion-button id="open-toast" shape="round">Open</ion-button>
+      <p id="message">Este exemplo de toast usa gatilhos para abrir automaticamente um toast quando o botão é clicado.</p>
+      <ion-toast trigger="open-toast" message="Este toast desaparecerá após 5 segundos" [duration]="5000"></ion-toast>
+    </div>
+  </div>
+
+  <div class="blocos">
+    <h5>Controlador</h5>
+    <div id="bloc_2_buts">
+      <ion-button class="space_but" shape="round" (click)="presentToast('top')">No Topo</ion-button>
+      <ion-button class="space_but" shape="round" (click)="presentToast('middle')">No Meio</ion-button>
+      <ion-button class="space_but" shape="round" (click)="presentToast('bottom')">No Fundo</ion-button>
+    </div>
+  </div>
+
+  <div class="blocos">
+    <h5>Posicionamento</h5>
+    <ion-button id="headerAnchor" shape="round">Header</ion-button>
+    <ion-button id="footerAnchor" shape="round">Footer</ion-button>
+    <ion-toast
+      trigger="headerAnchor"
+      position="top"
+      positionAnchor="header"
+      message="Hello World!"
+      duration="2000"
+    ></ion-toast>
+    <ion-toast
+      trigger="footerAnchor"
+      position="bottom"
+      positionAnchor="footer"
+      message="Hello World!"
+      duration="2000"
+    ></ion-toast>
+  </div>
+
+  <div class="blocos">
+    <h5>Disposição</h5>
+    <ion-button id="open-inline-toast" shape="round">Aberta</ion-button>
+    <ion-button id="open-stacked-toast" shape="round">Empilhado</ion-button>
+    <ion-toast
+      trigger="open-inline-toast"
+      [duration]="3000"
+      [buttons]="toastButtons"
+      message="Este é um toast com uma mensagem longa e um botão que aparece na mesma linha."
+    ></ion-toast>
+    <ion-toast
+      trigger="open-stacked-toast"
+      [duration]="3000"
+      [buttons]="toastButtons"
+      message="Este é um toast com uma mensagem longa e um botão que aparece na próxima linha."
+      layout="stacked"
+    ></ion-toast>
+  </div>
+
+  <div class="blocos">
+    <h5>Icones</h5>
+    <ion-button id="open-toast2" shape="round" (click)="presentToast2()">Open</ion-button>
+    <ion-toast trigger="open-toast2" message="Hello World!" [duration]="3000" icon="globe"></ion-toast>
+  </div>
+
+  <div id="bloc_fim">
+    <h5>Tema</h5>
+    <ion-button id="open-toast3" shape="round">Open</ion-button>
+    <ion-toast
+      trigger="open-toast3"
+      [duration]="3000"
+      message="Hello Styled World!"
+      class="custom-toast"
+      [buttons]="toastButtons2"
+    ></ion-toast>
+  </div>
+</ion-content>

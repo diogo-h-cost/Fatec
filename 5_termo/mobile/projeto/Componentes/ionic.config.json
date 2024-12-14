@@ -1,0 +1,7 @@
+{
+  "name": "Componentes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

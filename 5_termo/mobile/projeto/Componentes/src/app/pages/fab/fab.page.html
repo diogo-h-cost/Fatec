@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Fabs</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div id="bloc_1">
+    <h5>Padrão</h5>
+    <ion-fab>
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+
+  <div id="bloc_2">
+    <h5>Fixo</h5>
+    <ion-fab>
+      <ion-fab-button>
+        <ion-icon name="chevron-forward-circle"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="end">
+        <ion-fab-button>
+          <ion-icon name="document"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button>
+          <ion-icon name="color-palette"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button>
+          <ion-icon name="globe"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+  </div>
+
+  <div id="bloc_3">
+    <h5>Lista / Cores</h5>
+    <ion-fab id="fab_mult">
+      <ion-fab-button color="secondary">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button color="primary">
+          <ion-icon name="chevron-up"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list side="end">
+        <ion-fab-button color="tertiary">
+          <ion-icon name="chevron-forward"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="success">
+          <ion-icon name="chevron-forward"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list side="bottom">
+        <ion-fab-button color="warning">
+          <ion-icon name="chevron-down"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list side="start">
+        <ion-fab-button color="danger">
+          <ion-icon name="chevron-back"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="dark">
+          <ion-icon name="chevron-back"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+  </div>
+
+  <div id="bloc_4">
+    <h5>Personalizado</h5>
+    <ion-fab id="fab_person">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="end">
+        <ion-fab-button>
+          <ion-icon name="document"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button>
+          <ion-icon name="color-palette"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button>
+          <ion-icon name="globe"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+  </div>
+
+  <div id="bloc_5">
+    <h5>Lista Infinita</h5>
+    <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-list>
+      <ion-item [button]="true" *ngFor="let item of items; let index">
+        <ion-avatar slot="start">
+          <img [src]="'https://picsum.photos/80/80?random=' + index" alt="avatar" />
+        </ion-avatar>
+        <ion-label>{{ item }}</ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </div>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Alertas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="presentAlert()" shape="round">Present Alert</ion-button>
+
+  <ion-button (click)="presentAlertMultipleButtons()" shape="round">Present Alert Multiple Buttons</ion-button>
+
+  <ion-button (click)="presentAlertConfirm()" shape="round">Present Alert Confirm</ion-button>
+
+  <ion-button (click)="presentAlertPrompt()" shape="round">Present Alert Prompt</ion-button>
+
+  <ion-button (click)="presentAlertRadio()" shape="round">Present Alert Radio</ion-button>
+
+  <ion-button (click)="presentAlertCheckbox()" shape="round">Present Alert Checkbox</ion-button>
+</ion-content>
