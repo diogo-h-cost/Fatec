@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Estados</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div id="container">
+    <div id="container_bloco">
+      <div id="container_bloco_est">
+        <ion-select label="Estado" placeholder="Selecione" [(ngModel)]="selectedEstado" (ionChange)="onEstadoChange()">
+          <ion-select-option *ngFor="let estado of estados" [value]="estado">
+            {{ estado.nome }} ({{ estado.sigla }})
+          </ion-select-option>
+        </ion-select>
+      </div>
+      <div class="container_bloco_div" *ngIf="selectedEstado">
+        <div class="container_bloco_div_reg-cap">
+          <span class="text_reg-cap">Região</span>
+          <span class="text_reg-cap">{{ selectedEstado.regiao }}</span>
+        </div>
+        <div class="container_bloco_div_reg-cap">
+          <span class="text_reg-cap">Capital</span>
+          <span class="text_reg-cap">{{ selectedEstado.capital }}</span>
+        </div>
+      </div>
+      <div class="container_bloco_div_hab" *ngIf="selectedEstado">
+        <span class="text_reg-cap">Habitantes</span>
+          <span class="text_reg-cap">{{ selectedEstado.habitantes | number:'1.0-0' }}</span>
+      </div>
+    </div>
+  </div>
+</ion-content>

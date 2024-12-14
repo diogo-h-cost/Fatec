@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ion-title {
+  margin-left: 2vw;
+}
+
+ion-content {
+  --background: url("/assets/1.png") center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+}
+
+#container_bloco {
+  border: 2px solid rgb(209, 209, 209);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  width: 30vw;
+  height: 46vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#container_bloco_est {
+  border-bottom: 1px solid lightgray;
+  width: 18.5vw;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  font-size: 2.2vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_bloco_div {
+  width: 26vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_bloco_div_reg-cap {
+  border-bottom: 1px solid lightgray;
+  width: 13vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text_reg-cap {
+  font-size: 2.4vh;
+  margin-bottom: 1vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_bloco_div_hab {
+  width: 26vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
