@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>IMC</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content id="centro">
+  <div id="container">
+    <ion-item class="itens">
+      <ion-label>Sexo</ion-label>
+      <ion-select placeholder="Selecione" [(ngModel)]="sexo">
+        <ion-select-option value="f">Feminino</ion-select-option>
+        <ion-select-option value="m">Masculino</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item class="itens">
+      <ion-label>Peso</ion-label>
+      <ion-input type="number" placeholder=" Digite o peso" [(ngModel)]="peso"></ion-input>
+    </ion-item>
+    <ion-item class="itens">
+      <ion-label>Altura</ion-label>
+      <ion-input type="number" placeholder=" Digite a altura" [(ngModel)]="altura"></ion-input>
+    </ion-item>
+    <ion-button class="itens" (click)="enviar()" shape="round">Enviar</ion-button>
+  </div>
+</ion-content>

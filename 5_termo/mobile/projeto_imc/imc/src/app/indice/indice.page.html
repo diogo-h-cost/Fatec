@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Índice</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div id="container">
+    <ion-img id="tabela" src="assets/images/Tabela.png" alt="Tabela de IMC"></ion-img>
+  </div>
+  <div id="bloco">
+    <ion-item class="itens">
+      <ion-label>Peso: {{ peso | number:'1.1-2' }} kg</ion-label>
+    </ion-item>
+    <ion-item class="itens">
+      <ion-label>Altura: {{ altura | number:'1.2-2' }} m</ion-label>
+    </ion-item>
+    <ion-item class="itens">
+      <ion-label>Sexo: {{ sexo }}</ion-label>
+    </ion-item>
+    <ion-button class="itens" expand="round" (click)="calcularIMC()">Calcular IMC</ion-button>
+    <ion-item class="itens" *ngIf="imc">
+      <ion-label>Seu IMC é: {{ imc | number:'1.1-2' }} >> {{ clas }}</ion-label>
+    </ion-item>
+  </div>
+</ion-content>
