@@ -1,0 +1,94 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ion-header {
+  --background: #ffffff;
+  --ion-toolbar-background: #4a90e2;
+  --ion-toolbar-color: #fff;
+  padding: 10px 0;
+}
+
+ion-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+ion-content {
+  background-color: #f5f5f5;
+  padding: 15px 10px;
+}
+
+ion-list {
+  margin-top: 20px;
+  padding: 0;
+}
+
+ion-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+ion-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+ion-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 0px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+ion-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  flex-grow: 1;
+}
+
+ion-label h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+ion-badge {
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+ion-skeleton-text {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+ion-skeleton-text[animated] {
+  animation: skeleton-loading 1.5s infinite ease-in-out;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #d0d0d0;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}

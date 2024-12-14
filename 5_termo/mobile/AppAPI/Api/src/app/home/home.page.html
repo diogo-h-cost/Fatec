@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="primary">
+      Lista de Shows
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  @if(isLoading){
+    <ion-list>
+      @for(item of dummyArray; track item){
+        <ion-item lines="none">
+          <ion-avatar slot="start">
+            <ion-skeleton-text>
+            </ion-skeleton-text>
+          </ion-avatar>
+          <ion-skeleton-text animated style="height: 50px"/>
+        </ion-item>
+      }
+    </ion-list>
+  }
+  <ion-list>
+    @for(item of listaShow; track item.id){
+      <ion-item button [routerLink]="['/detalhes', item.id]">
+        @if(item.image !== null){
+          <ion-avatar slot="start">
+            <img src="{{item.image.medium}}"/>
+          </ion-avatar>
+        }
+        <ion-label>{{item.name}}</ion-label>
+        <ion-badge slot="end">{{item.rating.average}}</ion-badge>
+      </ion-item>
+    }
+  </ion-list>
+</ion-content>

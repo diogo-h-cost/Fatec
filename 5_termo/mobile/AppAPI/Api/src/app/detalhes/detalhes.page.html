@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary"><h2>{{nome}}</h2></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-img src="{{imagem}}"></ion-img>
+    <ion-item [innerHTML]="summary"></ion-item>
+    <ion-item> {{qtdeSessoes}} Temporadas</ion-item>
+  </ion-list>
+  <h3 color="primary" style="text-align: center;">Elenco</h3>
+  <ion-list>
+    <ion-item *ngFor="let item of elenco">
+      <ion-avatar slot="start">
+        <img [src]="item.actorPhoto" *ngIf="item.actorPhoto"/>
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ item.actorName }}</h2>
+        <p>Personagem: {{ item.characterName }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
