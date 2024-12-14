@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Excluir Produto</title>
+</head>
+<body>
+    <h1>Excluir Produto</h1>
+    <ul>
+        <li>Código: {{ produto[0]}}</li>
+        <li>Descrição: {{ produto[1]}}</li>
+        <li>Preço: {{ produto[2] }}</li>
+        <li>Qtde: {{ produto[3] }}</li>
+
+    </ul>
+    <form method="POST">
+        <button type="submit">Confirmar exclusão</button>
+    </form>
+</body>
+</html>
