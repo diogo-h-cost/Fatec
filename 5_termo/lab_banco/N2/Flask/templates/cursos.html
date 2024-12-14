@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lista de Cursos</title>
+</head>
+<body>
+<h2 style="text-align: center;">Lista de Cursos</h2>
+<hr>
+<a href="{{url_for('cria_curso')}}" class="btn btn-secondary">Adicionar Curso</a>
+<br><br>
+<table class="table table-bordered table-hover">
+	<thead class="table-dark">
+	    <tr>
+	      <th scope="col">Id</th>
+	      <th scope="col">Nome</th>
+	      <th scope="col">Descrição</th>
+	      <th scope="col">CH</th>
+	    </tr>
+  </thead>
+  <tbody>
+	{% for curso in cursos %}
+		<tr>
+			<td>{{curso.id}}</td>
+			<td>{{curso.nome}}</td>
+			<td>{{curso.descricao}}</td>
+			<td>{{curso.ch}}</td>
+		</tr>
+	{% endfor %}
+	
+  </tbody>
+</table>
+
+</body>
+</html>
