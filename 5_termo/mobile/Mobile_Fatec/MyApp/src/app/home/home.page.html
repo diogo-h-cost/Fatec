@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="cinza">
+    <ion-title (click)="navigateHome()">
+      Mãos Unidas
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button href="/sobre">Sobre</ion-button>
+      <ion-button href="/contato">Contato</ion-button>
+      <ion-button href="/projetos">Projetos</ion-button>
+      <ion-button href="/galeria">Galeria</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="fundo">
+    <div id="container">
+      <strong>Bem-vindo(a) ao Mãos Unidas</strong>
+      <p>Descubra nossos projetos sociais, eventos e notícias!</p>
+    </div>
+
+    <!-- Projetos em Destaque -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Projetos em Destaque</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Educa Jovem</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Cidadania em Ação</ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Eventos Futuros -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Eventos Futuros</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Troca Solidária</ion-label>
+          <ion-note slot="end" class="date">20/10/2024</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>Dia da Cultura</ion-label>
+          <ion-note slot="end" class="date">10/12/2024</ion-note>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Notícias -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Notícias</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Comunidade recebe prêmio por impacto social</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Novo projeto de reciclagem começa em setembro</ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="cinza">
+    <div class="footer">
+      <p>&copy; 2024 Mãos Unidas. Todos os direitos reservados.</p>
+    </div>
+  </ion-toolbar>
+</ion-footer>

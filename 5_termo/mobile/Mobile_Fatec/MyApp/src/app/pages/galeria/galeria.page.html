@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="cinza">
+    <ion-title (click)="navigateHome()">
+      Mãos Unidas
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button href="/sobre">Sobre</ion-button>
+      <ion-button href="/contato">Contato</ion-button>
+      <ion-button href="/projetos">Projetos</ion-button>
+      <ion-button href="/galeria">Galeria</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="fundo">
+    <div id="container">
+      <h1>Galeria de Fotos</h1>
+      <div id="fotos">
+        <div class="linhas">
+          <div class="imgs">
+            <ion-img src="/assets/img/galeria/bazar.jpg" class="tam_img"></ion-img>
+            <strong>Bazar comunitário</strong>
+          </div>
+          <div class="imgs">
+            <ion-img src="/assets/img/galeria/capoeira.jpg" class="tam_img"></ion-img>
+            <strong>Aulas de capoeira</strong>
+          </div>
+          <div class="imgs">
+            <ion-img src="/assets/img/galeria/cestas.jpg" class="tam_img"></ion-img>
+            <strong>Distribuição de cestas básicas</strong>
+          </div>
+        </div>
+        <div class="linhas">
+          <div class="imgs">
+            <ion-img src="/assets/img/galeria/criancas.jpeg" class="tam_img"></ion-img>
+            <strong>Recriação infantil</strong>
+          </div>
+          <div class="imgs">
+            <ion-img src="/assets/img/galeria/criancas2.jpg" class="tam_img"></ion-img>
+            <strong>Entrega de brinquedos</strong>
+          </div>
+          <div class="imgs">
+            <ion-img src="/assets/img/galeria/doacoes.jpeg" class="tam_img"></ion-img>
+            <strong>Doação de roupas para bebês</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="cinza">
+    <div class="footer">
+      <p>&copy; 2024 Mãos Unidas. Todos os direitos reservados.</p>
+    </div>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,22 @@
+// For information on how to create your own theme, please see:
+// http://ionicframework.com/docs/theming/
+
+// Site p/ cores [https://ionicframework.com/docs/theming/colors#new-color-creator]
+
+:root {
+	--ion-color-cinza: #737373;
+	--ion-color-cinza-rgb: 115,115,115;
+	--ion-color-cinza-contrast: #ffffff;
+	--ion-color-cinza-contrast-rgb: 255,255,255;
+	--ion-color-cinza-shade: #656565;
+	--ion-color-cinza-tint: #818181;
+}
+
+.ion-color-cinza {
+	--ion-color-base: var(--ion-color-cinza);
+	--ion-color-base-rgb: var(--ion-color-cinza-rgb);
+	--ion-color-contrast: var(--ion-color-cinza-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-cinza-contrast-rgb);
+	--ion-color-shade: var(--ion-color-cinza-shade);
+	--ion-color-tint: var(--ion-color-cinza-tint);
+}

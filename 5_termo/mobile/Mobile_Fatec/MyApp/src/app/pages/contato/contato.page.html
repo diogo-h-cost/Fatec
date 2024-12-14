@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="cinza">
+    <ion-title (click)="navigateHome()">
+      Mãos Unidas
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button href="/sobre">Sobre</ion-button>
+      <ion-button href="/contato">Contato</ion-button>
+      <ion-button href="/projetos">Projetos</ion-button>
+      <ion-button href="/galeria">Galeria</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="fundo">
+    <div id="container">
+      <h2>Informações de Contato</h2>
+        <div id="bloco">
+          <div class="secoes">
+            <h3>Telefone</h3>
+            <p>(11) 1234-5678</p>
+          </div>
+          <div class="secoes">
+            <h3>Email</h3>
+            <p>contato.maosunidas.org</p>
+          </div>
+          <div class="secoes">
+            <h3>Endereço</h3>
+            <p>Rua Exemplo, 123 - São Paulo, SP</p>
+          </div>
+          <div class="secoes">
+            <h3>Nome do Organizador</h3>
+            <p>Maria Silva</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="cinza">
+    <div class="footer">
+      <p>&copy; 2024 Mãos Unidas. Todos os direitos reservados.</p>
+    </div>
+  </ion-toolbar>
+</ion-footer>

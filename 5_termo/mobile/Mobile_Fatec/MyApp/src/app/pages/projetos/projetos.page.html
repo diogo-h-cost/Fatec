@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="cinza">
+    <ion-title (click)="navigateHome()">
+      Mãos Unidas
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button href="/sobre">Sobre</ion-button>
+      <ion-button href="/contato">Contato</ion-button>
+      <ion-button href="/projetos">Projetos</ion-button>
+      <ion-button href="/galeria">Galeria</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="fundo">
+    <div id="container">
+      <div id="title">
+        <h1>Projetos Sociais</h1>
+      </div>
+      <div id="bloco">
+        <ion-list>
+          <ion-item>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Apoio Comunitário</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>Descrição: Um projeto para fornecer suporte a famílias em situação de vulnerabilidade.</p>
+                <p>Meta: Arrecadar R$10.000 para distribuir cestas básicas e roupas.</p>
+                <ion-button>Contribuir</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-item>
+
+          <ion-item>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Educa Jovem</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>Descrição: Projeto voltado para a educação e capacitação de jovens em áreas carentes.</p>
+                <p>Meta: Capacitar 200 jovens até o final do ano.</p>
+                <ion-button>Participar</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-item>
+
+          <ion-item>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Cidadania em Ação</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>Descrição: Iniciativas para promover a cidadania e direitos humanos.</p>
+                <p>Meta: Organizar 10 eventos educacionais e de conscientização.</p>
+                <ion-button>Saiba Mais</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="cinza">
+    <div class="footer">
+      <p>&copy; 2024 Mãos Unidas. Todos os direitos reservados.</p>
+    </div>
+  </ion-toolbar>
+</ion-footer>

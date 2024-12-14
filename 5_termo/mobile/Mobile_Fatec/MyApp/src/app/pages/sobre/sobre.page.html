@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="cinza">
+    <ion-title (click)="navigateHome()">
+      Mãos Unidas
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button href="/sobre">Sobre</ion-button>
+      <ion-button href="/contato">Contato</ion-button>
+      <ion-button href="/projetos">Projetos</ion-button>
+      <ion-button href="/galeria">Galeria</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="fundo">
+    <div id="container">
+      <div id="blocos">
+        <section class="secoes">
+          <h2>Missão</h2>
+          <p>
+            A nossa missão é criar uma plataforma que une pessoas e
+            organizações em torno de causas sociais importantes, promovendo
+            o impacto positivo e a transformação comunitária.
+          </p>
+        </section>
+
+        <section class="secoes">
+          <h2>História</h2>
+          <p>
+            Fundada em 2020, a nossa comunidade nasceu do desejo de fazer a diferença.
+            Desde então, temos trabalhado em vários projetos e iniciativas que beneficiam
+            a nossa sociedade e promovem a colaboração entre diversos atores sociais.
+          </p>
+        </section>
+
+        <section class="secoes">
+          <h2>Equipe e Parceiros</h2>
+          <p>
+            Somos um grupo de voluntários dedicados, profissionais e organizações
+            parceiras que trabalham juntos para alcançar nossos objetivos.
+            A nossa equipe é formada por especialistas em várias áreas,
+            comprometidos com o bem-estar social e a justiça comunitária.
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="cinza">
+    <div class="footer">
+      <p>&copy; 2024 Mãos Unidas. Todos os direitos reservados.</p>
+    </div>
+  </ion-toolbar>
+</ion-footer>
